@@ -553,6 +553,7 @@ li {
     border-radius: 2rem;
     width: 25rem;
     overflow: hidden;
+    outline: none;
 }
 .sign-up-btn {
     outline: none;
