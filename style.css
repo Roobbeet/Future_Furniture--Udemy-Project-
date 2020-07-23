@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya");
 html {
     font-size: 62.5%;
-    width: 100vw;
 }
 * {
     margin: 0;
     padding: 0;
 }
 body {
+    box-sizing: border-box;
     font-family: 'Alegreya', sans-serif;
+    padding: 0;
+    margin: 0;
     
 }
 a {
@@ -683,9 +685,6 @@ li {
 #show-form:checked ~ .login-form {
     display: block;
 }
-#show-form {
-    display: none;
-}
 .forms-wrapper {
     display: none;
     animation-name: modalbox;
@@ -693,9 +692,6 @@ li {
 }
 #show-hide-forms:checked ~ .forms-wrapper {
     display: block;
-}
-#show-hide-forms {
-    display: none;
 }
 /* disable pointer event to disable all page */
 #show-hide-forms:checked ~ .container {
@@ -725,15 +721,13 @@ li {
 }
 @media (max-width: 990px){
     .container {
-        width: 100%;
         grid-template-columns: 5vw repeat(8, minmax(min-content, 16rem)) 5vw;
-        grid-template-rows: repeat(3, min-content) 70vh 1fr repeat(5, min-content);
+        grid-template-rows: repeat(3, min-content) 70vh 1fr repeat(6, min-content);
         margin-right: 0;
     }
 }
 @media (max-width: 604px) {
     .container {
-        width: 100%;
         grid-template-columns: 5vw repeat(8, minmax(5vw, 8rem)) 5vw;
         grid-template-rows: repeat(3, min-content) 70vh 1fr repeat(6, min-content);
         margin-right: 0;
@@ -822,7 +816,7 @@ li {
         padding: 1rem;
         position: fixed;
         left: 50%;
-        transform: translateX(-60%);
+        transform: translateX(-50%);
     }
     .x-btn {
         font-size: 2rem;
@@ -850,9 +844,11 @@ li {
 }
 @media (max-width: 360px) {
     .container {
-        width: 100%;
         grid-template-columns: 5vw repeat(8, minmax(min-content, 16rem)) 5vw;
         grid-template-rows: repeat(3, min-content) 70vh 1fr repeat(5, min-content) ;
         margin-right: 0;
+    }
+    .slide-btn {
+        display: none;
     }
 }
