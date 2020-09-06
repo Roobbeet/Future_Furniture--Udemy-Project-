@@ -2,4 +2,4 @@
 Self taught project to exercise CSS Grid by CodeAndCreate Udemy
 
 try me!
-http://roobbeet.future-furniture.io/
+https://roobbeet.github.io/Future_Furniture--Udemy-Project-/
