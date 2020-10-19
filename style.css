@@ -15,6 +15,7 @@ body {
     
 }
 a {
+    display: none;
     text-decoration: none;
     color: #12376e;
 }
